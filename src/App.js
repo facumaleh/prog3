@@ -4,8 +4,8 @@ import SocialCard from "./components/tarjetas";
 
 
 function App() {
-  const [allUsers, setAllUsers] = useState([]);
-  const [users, setUsers] = useState([]);
+  const [allUsers, setTodosUsuarios] = useState([]);
+  const [users, setUsuarios] = useState([]);
    
 
   useEffect(() => {
@@ -18,15 +18,15 @@ function App() {
         console.log(error);
         userData = [];
       }
-      setAllUsers(userData.results);
-      setUsers(userData.results);
+      setTodosUsuarios(userData.results);
+      setUsuarios(userData.results);
     })();
   }, []);
 
   const filtrarTarjetas = event => {
     const value = event.target.value.toLowerCase();
     const filteredUsers = allUsers.filter(user => (`${user.name.first} ${user.name.last}`.toLowerCase().includes(value)));
-    setUsers(filteredUsers);
+    setUsuarios(filteredUsers);
   }
   
 
