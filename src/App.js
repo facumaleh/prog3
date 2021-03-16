@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import "./App.css";
-import SocialCard from "./tarjetas";
+import SocialCard from "./components/tarjetas";
 
 
 function App() {
