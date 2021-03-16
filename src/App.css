@@ -1,0 +1,26 @@
+.App {
+  padding: 5rem;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  background: lightblue
+}
+
+.search-box {
+  outline: none;
+  width: 100%;
+  border: 1px solid rebeccapurple;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: .5rem;
+}
+
+.NombreEquipo {
+	font-family: 'Alegreya', serif;
+	font-weight: 100;
+	font-size: 2rem;
+	color: red;
+}
+

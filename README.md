@@ -1,2 +1,1 @@
-# prog3
-react y tarjetas
+# Progra3PrimerProyecto
